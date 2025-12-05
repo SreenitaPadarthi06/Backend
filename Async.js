@@ -10,6 +10,5 @@ const myfun= async()=>{
     console.log("456");
     const result=await getUserdetails("123");
     console.log(result);
-    
 };
 myfun();
