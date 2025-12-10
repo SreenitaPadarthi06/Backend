@@ -1,6 +1,8 @@
 import express from "express";
+import router from './Router/studentRouter.js';
 const app=express();
 app.use(express.json());
+app.use('/api',router)
 app.get('/get-user',(req,res)=>{
     res.send("api success");
 })
